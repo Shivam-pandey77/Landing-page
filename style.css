@@ -106,22 +106,77 @@ nav ul li a:hover {
 /*-----------------navbar end --------------------------------*/
 
 .top-sec {
-    background-color: #4a2c2a;
+    background-color: rgb(231, 233, 234);
     height: 20%;
     width: 100%;
 }
 
+.top-sec  {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-sec-box1  {
+    width: 100%;
+}
+.top-sec-box1 p {
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.top-sec-box1 p span {
+    font-size: 2.3rem;
+}
+
+.top-sec-box1 p strong {
+    font-size: 2rem;
+}
+
+.top-sec-box1 button {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.top-sec-box2  {
+    width: 60%;
+}
+
+.top-sec-box2 img {
+    width: 100%;
+}
+
+#sale  {
+    font-size: 0.7rem;
+}
+
+.top-sec-box1 button:hover {
+    background-color: #4e4d4daf;
+    color: var(--color-black);
+    transition: all 0.3s;
+    cursor: pointer;
+}
 
 
 
-
+/*--------------------responsiblity-----------------------*/
 
 @media screen and (max-width: 1020px) {
+
+    /*----------navbar------------*/
     nav {
         width: 140%;
         height: 110px;
     }
-
     .nav-main ul {
         margin-right: 20px;
     }
@@ -132,9 +187,17 @@ nav ul li a:hover {
     nav ul li a{
     font-size: 1.2rem;
     }
+
+    /*------------------sectop---------------*/
+
+    .top-sec {
+        width: 140%;
+    }
+
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     nav {
         width: 160%;
         height: 130px;
@@ -146,6 +209,12 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 0 10px ;
+    }
+
+     /*------------------sectop---------------*/
+
+     .top-sec {
+        width: 160%;
     }
     
 }
@@ -162,6 +231,35 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 0 5px ;
+    }
+
+    /*------------------sectop---------------*/
+
+    .top-sec {
+        width: 200%;
+    }
+    
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        width: 280%;
+        height: 150px;
+    }
+
+    .nav-main ul {
+        margin-right: 5px;
+    }
+
+    nav ul li {
+        margin: 0 5px ;
+    }
+
+    /*------------------sectop---------------*/
+
+    .top-sec {
+        width: 280%;
     }
     
 }
