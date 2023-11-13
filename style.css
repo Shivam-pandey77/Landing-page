@@ -607,6 +607,12 @@ footer {
 
 
 @media screen and (max-width:700px)  {
+
+     .nav-main ul {
+        display: block;
+        width: 100%;
+        margin-right: 40px;
+    }
    
     #image-mid {
         height: 100%;
